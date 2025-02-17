@@ -1,6 +1,6 @@
 from math import sqrt
 
-N = int(input())
+N = int(input('Enter a number to check if it is a perfect square:'))
 root = int(sqrt(N)) 
 
 if root * root == N:
