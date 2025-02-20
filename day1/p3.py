@@ -11,3 +11,5 @@ print('ID:                    ',id)
 print('Basic Salary:          ',basics_alary)
 print('Gross Monthly Salary:  ',gross_monthly_salary)
 print('Annual Monthly Salary: ',annual_monthly_salary)
+
+#Employee details
