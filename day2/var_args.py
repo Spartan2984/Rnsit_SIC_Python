@@ -8,3 +8,4 @@ my_function(10)
 my_function(1, 2 ,3)
 my_function([1,2,3,5], 4, 5, 8)
 my_function(1)
+
