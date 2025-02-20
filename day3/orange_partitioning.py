@@ -23,3 +23,4 @@ print('Enter input numbers:')
 m = list(map(int, input().split()))
 partition_array(m,0,)
 
+#Orange_partitioning
