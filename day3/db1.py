@@ -18,3 +18,4 @@ def disconnect_db(connection):
 connection = connect_db()
 if connection:
     disconnect_db(connection)
+    

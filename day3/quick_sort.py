@@ -13,3 +13,4 @@ def quick_sort(numbers, low, high):
         pivot_index = partion_array(numbers, low, high)
         quick_sort(numbers, low, pivot_index-1)
         quick_sort(numbers, pivot_index+1, high)
+
