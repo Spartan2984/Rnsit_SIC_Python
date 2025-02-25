@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Wash App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .box {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        .box:hover {
+            transform: scale(1.05);
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <h1>Car Wash App</h1>
+    <div class="container" id="dashboard">
+        <!-- Boxes will be dynamically added here -->
+    </div>
+
+    <script>
+        const functions = [
+            "Total Washes Completed", "Popular Services", "Peak Hours",
+            "Revenue Analysis", "Water Consumption", "Employee Performance",
+            "Customer Ratings", "Service Time Analysis", "Loyalty Program Effectiveness",
+            "Discount Usage", "Membership Performance", "Wash Type Trends",
+            "Monthly Earnings", "Daily Wash Patterns", "Customer Retention Rates"
+        ];
+        
+        const dashboard = document.getElementById("dashboard");
+        
+        functions.forEach((func, index) => {
+            let div = document.createElement("div");
+            div.className = "box";
+            div.innerText = func;
+            dashboard.appendChild(div);
+        });
+    </script>
+</body>
+</html>
