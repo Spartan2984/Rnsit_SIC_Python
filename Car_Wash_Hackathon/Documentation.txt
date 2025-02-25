@@ -1,0 +1,65 @@
+# Car Wash Data Analysis
+
+## Overview
+This project analyzes car wash data using Python to gain insights such as total washes per day, week, and month, the most popular services, and peak days. The analysis is performed with Pandas, Matplotlib, and Seaborn.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 1. Total Washes Analysis (car_wash_analysis.py)
+
+**Objective:**
+The goal of this script is to analyze the total number of car washes completed per day, week, and month.
+
+**Steps:**
+- **Reading Data:** The script reads `car_wash_datasetcsv.csv`, which contains information on car wash visits.
+- **Processing Date Information:** The `Visit Date` column is converted to a datetime format, and additional columns are created for the day of the week and month.
+- **Grouping Data:** The dataset is grouped by day, week, and month to calculate the total number of washes for each time period.
+- **Generating Visualizations:**
+  - A **line graph** is created to display daily trends.
+  - **Bar charts** are generated to visualize weekly and monthly trends.
+- **Customization:**
+  - Titles and axis labels are added for clarity.
+  - Colors are chosen to distinguish different trends.
+  - The x-axis labels are rotated for better readability.
+
+**Outcome:**
+The output consists of three visualizations showing how car wash activity fluctuates daily, weekly, and monthly.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 2. Peak Days Analysis (peak_days.py)
+
+**Objective:**
+This script identifies the busiest days of the week for car washes.
+
+**Steps:**
+- **Reading Data:** Reads `car_wash_datasetcsv.csv` to extract car wash visit dates.
+- **Grouping Data:** Groups the data by the `Day of Week` column to count the number of washes for each day.
+- **Generating the Bar Chart:**
+  - A **bar chart** is created using Seaborn.
+  - The bars represent the total number of washes for each day.
+- **Customization:**
+  - The x-axis represents days of the week.
+  - The y-axis represents total washes.
+  - The color palette (`coolwarm`) makes trends more visually appealing.
+  - X-axis labels are rotated for better readability.
+
+**Outcome:**
+The final output is a bar chart that highlights the busiest days for car washes, providing insights into peak traffic times.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 3. Most Popular Services (popular_services.py)
+
+**Objective:**
+This script determines which car wash services are the most popular.
+
+**Steps:**
+- **Reading Data:** Reads `car_wash_datasetcsv.csv` to extract service type information.
+- **Counting Services:** Uses `value_counts()` to calculate the number of times each service was chosen.
+- **Generating the Bar Chart:**
+  - A **bar chart** is created using Seaborn.
+  - The x-axis represents the number of washes, and the y-axis represents service types.
+  - A `viridis` color palette enhances visualization.
+
+**Outcome:**
+The final output is a bar chart displaying the most popular services, helping businesses identify customer preferences.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
